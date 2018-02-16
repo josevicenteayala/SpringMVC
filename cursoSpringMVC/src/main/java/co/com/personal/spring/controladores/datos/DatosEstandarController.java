@@ -26,7 +26,7 @@ public class DatosEstandarController {
 	}
 
 	/**
-	 * http://localhost:8080/cursoSpringMVC/datos-estandar/datos?nombre=Jose%20Vicente
+	 * http://localhost:8080/cursoSpringMVC/datos-estandar/datosLenguaje?nombre=Jose%20Vicente
 	 * @param request
 	 * @return
 	 */
