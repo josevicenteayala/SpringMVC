@@ -47,7 +47,7 @@ public class ConversorDatosController {
 	}	
 	
 	/*
-	 * http://localhost:8080/cursoSpringMVC/conversor/coleccionfechas?fechas=2018-02-10&fecha=2018-03-23
+	 * http://localhost:8080/cursoSpringMVC/conversor/coleccionfechas?fechas=2018-02-10&fechas=2018-03-23
 	 * http://localhost:8080/cursoSpringMVC/conversor/coleccionfechas?fechas=2018-02-10,2018-03-23
 	 * */
 	@RequestMapping("/coleccionfechas")
