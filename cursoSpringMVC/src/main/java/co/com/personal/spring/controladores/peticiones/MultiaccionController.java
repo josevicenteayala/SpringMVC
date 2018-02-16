@@ -50,18 +50,24 @@ public class MultiaccionController {
 	public @ResponseBody String peticionPorCabecera() {
 		return "Peticion por presencia de cabeceras ";
 	}	
-	
+	/*
+	 *http://localhost:8080/cursoSpringMVC/multiaccion/produces 
+	 * */
 	@RequestMapping(value="/produces",method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody String peticionPorProduces() {
 		return "Peticion por presencia de produces  application/json";
 	}	
-	
+	/*
+	 * http://localhost:8080/cursoSpringMVC/multiaccion/consumes
+	 * */
 	@RequestMapping(value="/consumes",method=RequestMethod.GET, consumes=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody String peticionPorConsumes() {
 		return "Peticion por presencia de consumes  application/json";
 	}	
-
-	//@RequestMapping(value="/*")
+	/*
+	 * http://localhost:8080/cursoSpringMVC/multiaccion/
+	 * */
+	@RequestMapping(value="/*")
 	public @ResponseBody String peticionPorExpresionesRegulares() {
 		return "Peticion por expresion regular";
 	}	
