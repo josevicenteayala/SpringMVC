@@ -75,7 +75,7 @@ public class DatosController {
 	/*recuperar cookies
 	 * 
 	 * http://localhost:8080/cursoSpringMVC/datos/cookies
-	 * Solo funciona en Internet Explorer
+	 * Solo funciona en algunos navegadores
 	 * */
 	@RequestMapping(value="/cookies",method=RequestMethod.GET)
 	public @ResponseBody String conCookies(@CookieValue String JSESSIONID) {
@@ -84,7 +84,7 @@ public class DatosController {
 	
 	/*recuperar cookies
 	 * 
-	 * http://localhost:8080/cursoSpringMVC/
+	 * http://localhost:8080/cursoSpringMVC/body
 	 * Es necesario crear un html con un formulario
 	 * */
 	@RequestMapping(value="/body",method=RequestMethod.POST)

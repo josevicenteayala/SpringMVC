@@ -1,16 +1,6 @@
 <html>
 <head>
-<script type="text/javascript">
-	function imprimirTirilla(){
-		alert('imprimir tirilla');
-		var file new Blob(["texto del archivo"], {type:'application/pdf'});
-		var fileURL =URL.createObjectURL(file);
-		window.open(fileURL,'_blank');
-	}
-
-</script>
 </head>
-
 
 <body>
 <h2>Hello World!</h2>
@@ -22,7 +12,6 @@
 		<label for="edad"></label>
 		<input type="text" name="edad" id="edad" size="2"/>
 		<input type="submit" name="enviar" value="Enviar"/>
-		<input type="button" onclick="imprimirTirilla();" name="ImprimirTirilla" value="Imprimir Tirilla">
 	</fieldset>
 </form>
 </body>
