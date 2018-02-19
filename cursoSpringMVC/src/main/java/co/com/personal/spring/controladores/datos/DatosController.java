@@ -82,7 +82,7 @@ public class DatosController {
 		return "Valor obtenido desde la cookie "+JSESSIONID;
 	}	
 	
-	/*recuperar cookies
+	/*recuperar mediante RequestBody
 	 * 
 	 * http://localhost:8080/cursoSpringMVC/body
 	 * Es necesario crear un html con un formulario
@@ -92,7 +92,7 @@ public class DatosController {
 		return "Valor obtenido desde el body "+body;
 	}	
 	
-	/*recuperar cookies
+	/*recuperar datos con HttpEntity
 	 * 
 	 * http://localhost:8080/cursoSpringMVC/
 	 * Es necesario crear un html con un formulario
