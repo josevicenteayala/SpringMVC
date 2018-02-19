@@ -45,6 +45,15 @@ public class PeticionesController {
 	public @ResponseBody String peticionPorCabecera() {
 		return "Peticion por presencia de cabeceras ";
 	}	
+	
+	/*
+	 * http://localhost:8080/cursoSpringMVC/peticiones/cabecerasnegada/
+	 * */
+	@RequestMapping(value="/peticiones/cabecerasnegada",method=RequestMethod.GET, headers="!Accept=text/plain")
+	public @ResponseBody String peticionPorCabeceraNegada() {
+		return "Peticion por presencia de cabeceras negada";
+	}	
+	
 	/*
 	 * http://localhost:8080/cursoSpringMVC/peticiones/produces/
 	 * */
