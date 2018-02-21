@@ -1,4 +1,4 @@
-package es.adama.spring.controladores.conversores.mensajes;
+package co.com.personal.spring.controladores.conversores.mensajes;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.sun.syndication.feed.atom.Feed;
 import com.sun.syndication.feed.rss.Channel;
-
-import co.com.personal.spring.controladores.conversores.mensajes.JavaBean;
 
 @Controller
 @RequestMapping("/conversor-mensajes/*")
@@ -51,8 +49,8 @@ public class ConversorMensajesController {
 	public @ResponseBody Channel rss() {
 		Channel channel = new Channel();
 		channel.setFeedType("rss_2.0");
-		channel.setTitle("Titulo del RSS");
-		channel.setDescription("Cuerpo de la descripcion");
+		channel.setTitle("Título del RSS");
+		channel.setDescription("Cuerpo de la descripción");
 		channel.setLink("http://www.dicotraining.com");
 		return channel;
 	}	
