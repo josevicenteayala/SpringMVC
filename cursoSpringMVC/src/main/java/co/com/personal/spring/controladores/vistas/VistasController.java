@@ -76,7 +76,7 @@ public class VistasController {
 	@RequestMapping("/saludos2")
 	public String vistaDos(Model modelo) {
 		modelo.addAttribute("mensaje","Saludos Jose");
-		modelo.addAttribute("mensaje2",", Cómo me le va?");
+		modelo.addAttribute("mensaje2",", Como me le va?");
 		return "hello4";
 	}	
 	
