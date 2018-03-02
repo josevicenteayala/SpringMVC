@@ -49,8 +49,8 @@ public class ConversorMensajesController {
 	public @ResponseBody Channel rss() {
 		Channel channel = new Channel();
 		channel.setFeedType("rss_2.0");
-		channel.setTitle("Título del RSS");
-		channel.setDescription("Cuerpo de la descripción");
+		channel.setTitle("Titulo del RSS");
+		channel.setDescription("Cuerpo de la descripcion");
 		channel.setLink("http://www.dicotraining.com");
 		return channel;
 	}	

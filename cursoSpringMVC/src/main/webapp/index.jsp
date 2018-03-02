@@ -4,7 +4,7 @@
 
 <body>
 <h2>Hello World!</h2>
-<form action="http://localhost:8080/cursoSpringMVC/datos/entidad" method="post">
+<form action="datos/entidad" method="post">
 	<fieldset>
 		<legend>Formulario de ejemplo del Body</legend>
 		<label for="nombre">Nombre</label>
